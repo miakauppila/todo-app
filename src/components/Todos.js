@@ -10,7 +10,6 @@ const Todos = ({ todos, onDelete }) => {
             <div style={{ lineHeight: "40px" }}>
               {todo.content}
               <button
-                style={{}}
                 onClick={() => {
                   onDelete(todo.id);
                 }}

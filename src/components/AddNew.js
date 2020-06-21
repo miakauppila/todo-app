@@ -12,16 +12,10 @@ const AddNew = ({ addTodo }) => {
     setInputValue("");
   };
 
-  const styles = {
-    label: {
-      fontSize: "20px",
-    },
-  };
-
   return (
     <div>
       <form onSubmit={onSubmitHandler}>
-        <label style={styles.label}>Add a new to do:</label>
+        <label>Add a new to do:</label>
         <input type="text" onChange={onChangeHandler} value={inputValue} />
         <button className="waves-effect waves-light btn">ADD</button>
       </form>
